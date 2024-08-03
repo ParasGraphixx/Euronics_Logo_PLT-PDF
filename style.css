@@ -1,0 +1,80 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #2E2E2E;
+            color: #CCCCCC;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            padding-bottom: 60px;
+        }
+
+        .containers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #3C3C3C;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .download-buttons button {
+            background-color: #5A5A5A;
+            color: #FFFFFF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-buttons button:hover {
+            background-color: #777777;
+        }
+
+        @media (max-width: 768px) {
+            .containers {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                width: 100%;
+            }
+        }
